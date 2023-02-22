@@ -1,1 +1,2 @@
 # openbouffalo_dev_container
+Since the instructions to build https://github.com/openbouffalo/buildroot_bouffalo didn't work in my gentoo, I created this ubuntu image (as used in the https://github.com/openbouffalo/buildroot_bouffalo actions for building the official firmware binaries) of the environment ready for development, with all precompiled as in the official repo. Added ncurses to allow ```make menuconfig``` of the kernel.
