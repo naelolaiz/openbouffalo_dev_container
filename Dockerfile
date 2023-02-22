@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -y make gcc g++ unzip git bc python3 device-tree-compiler mtd-utils xz-utils file wget cpio rsync bzip2
+RUN apt-get update && apt-get install -y make gcc g++ unzip git bc python3 device-tree-compiler mtd-utils xz-utils file wget cpio rsync bzip2 libncurses-dev mc
 
 RUN mkdir src && cd src && git clone https://github.com/buildroot/buildroot && git clone https://github.com/openbouffalo/buildroot_bouffalo && export BR_BOUFFALO_OVERLAY_PATH=$(pwd)/buildroot_bouffalo && cd buildroot && make BR2_EXTERNAL=$BR_BOUFFALO_OVERLAY_PATH pine64_ox64_defconfig && make
 
