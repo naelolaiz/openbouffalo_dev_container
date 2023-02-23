@@ -8,3 +8,5 @@ Since the instructions to build https://github.com/openbouffalo/buildroot_bouffa
  - https://btashton.github.io/bl808-notes/index.html
  - https://twitter.com/btashton
  - https://github.com/bouffalolab/bl-pac
+## riscv
+ - https://danielmangum.com/categories/risc-v-bytes/
